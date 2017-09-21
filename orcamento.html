@@ -9,6 +9,11 @@
 </head>
 <body>
     <header>
+        <figure>
+            <img src="image/if_Cat_130236.png" alt="Imagem Gato">
+            <figcaption>Legenda da iamgem</figcaption>
+        </figure>
+
         <img src="image/if_Cat_130236.png" alt="Gato Preto da sorte" class="center">
         <h1> <img src="image/reprograma.png" alt="Reprograma" class="center"> </h1>
         
@@ -19,23 +24,30 @@
 
             </ul>
         </nav>
+        
+        <a href="">Site 1</a>
+        <a href="">Site 2</a>
+        <p> hauahuahauahua</p>
     </header>
     <h2 id="titulo">Preencha seu orçamento</h2>
     <form action="/#">
-        <div>
-            <label for="nome"> Nome:</label>
+        <div ="box">
+            <label for="nome" class="box-color"> Nome:</label>
             <input placeholder="Digite seu nome ;)" id="nome" name="nome" type="text" required>
             <br> <br>
         </div>
-        
-        <label for="email"> Email:</label>
+
+        <div class="box">
+        <label for="email" class="box-color"> Email:</label>
         <input placeholder="name@name.com" id="email" name="email" type="email" required>
         <br> <br>
+        </div>
 
-        <label for="descricao"> Descrição:</label>
-        <textarea placeholder="Adiciona uma descrição: " name="descricao" id="descricao" cols="30" rows="10"></textarea>
+        <div class="box">
+        <label for="descricao" class="box-color"> Descrição:</label>
+        <textarea placeholder="Adiciona uma descrição: " name="descricao" id="descricao" cols="40" rows="10"></textarea>
         <br> <br>
-        <label for="material"> Material:</label>
+        <label for="material" class="box-color"> Material:</label>
 
         <select id="material" id="material" multiple>
             <option value="emailMarketing">Email Marketing </option>
@@ -43,36 +55,60 @@
             <option value="mobile">Mobile</option>
             <option value="outros">Outros</option> 
         </select><br><br>
-        
-        <label>Você precisa de:</label> <br>
-        <input type="checkbox" id="designer" name="profissionais"><label for="designer"> Designer </label> <br>
-        <input type="checkbox" id="desenvolvedor" name="profissionais"><label for="desenvolvedor">Desenvolvedor</label> <br>
-        <input type="checkbox" id="gerente" name="profissionais"><label for="gerente">Gerente</label> <br> <br>
+        </div>
 
-        <label for="orcamento"> Orçamento:</label>
+        <div class="box">
+            
+                <label class="box-color">Você precisa de:</label> 
+            
+
+            <div ="box">
+                <input type="checkbox" id="designer" name="profissionais">
+                <label for="designer"> Designer </label> 
+            </div>
+
+             <div ="box">
+            <label for="desenvolvedor">
+                <input type="checkbox" id="desenvolvedor" name="profissionais">
+                <label for="desenvolvedor">Desenvolvedor</label> 
+            </label>
+             </div>
+            
+            <div ="box">
+                <input type="checkbox" id="gerente" name="profissionais">
+                <label for="gerente">Gerente</label>  
+            </div>
+        </div>
+
+        <div class="box">
+        <label for="orcamento" class="box-color"> Orçamento:</label>
         <select id="orcamento">
             <option value="1">Menos de $100,00 </option>
             <option value="2">$100,00 - $300,00</option>
             <option value="3">$300,00 - $500,00</option>
             <option value="4">$Mais de $400,00</option>
         </select>
-        
-        <label for="disponibilidade">Disponibilidade:</label><br>
+        </div>
+
+        <div class="box">
+        <label for="disponibilidade" class="box-color">Disponibilidade:</label><br>
         <input type="radio" id="integral" name="disponibilidade"><label for="integral">Período Integral</label>
         <input type="radio" id="meioPeriodo" name="disponibilidade"><label for="meioPeriodo">Meio Periodo</label>
         <input type="radio" id="ocasional" name="disponibilidade"><label for="ocasional">Ocasional</label> <br> <br>
         
-        <label for="prazo">Prazo</label>
+        <label for="prazo" class="box-color">Prazo</label>
         <input type="date" id="prazo" name="prazo">
-
         <br> <br>
-        <label for="file">Arquivo complementar:</label>
+        </div>
+
+        
+        <label for="file" class="box-color">Arquivo complementar:</label>
         <input type="file" id="file" name="file" accept="image/*">
         <br> <br>
         <input type="submit" value="Enviar">   
     </form>
     <footer> 
-        <p>Made with ♥ by <a href="mailto:jessica.leute@gmail.com" target="_blank">Jessica Oliveira</a>- 2017</p>
+        <p>Made with <span class="heart">♥</span> by <a href="mailto:jessica.leute@gmail.com" target="_blank">Jessica Oliveira</a> - 2017</p>
     </footer>
 </body>
 </html>  
